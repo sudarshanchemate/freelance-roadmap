@@ -1,0 +1,1013 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Freelancing Roadmap for Freshers | Sudarshan_Technicals</title>
+<meta name="description" content="From zero to your first paying client: a free 10-step freelancing roadmap for students and freshers in India.">
+<meta name="theme-color" content="#1e3a8a">
+<meta property="og:title" content="Freelancing Roadmap for Freshers">
+<meta property="og:description" content="From zero to your first paying client: 10 steps, templates, pricing guide. 100% free.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f4f7fb;
+    --card: #ffffff;
+    --ink: #0f172a;
+    --text: #334155;
+    --muted: #64748b;
+    --line: #e2e8f0;
+    --blue: #2563eb;
+    --blue-soft: #eff4ff;
+    --violet: #7c3aed;
+    --green: #16a34a;
+    --green-soft: #ecfdf3;
+    --red: #dc2626;
+    --red-soft: #fef2f2;
+    --amber: #f59e0b;
+    --grad: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    --hero: linear-gradient(150deg, #0f172a 0%, #1e3a8a 55%, #2563eb 100%);
+    --shadow: 0 8px 24px rgba(15, 23, 42, .08);
+    --shadow-lg: 0 14px 36px rgba(37, 99, 235, .18);
+    --radius: 16px;
+    --gutter: 16px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg); color: var(--text);
+    font-size: 15.5px; line-height: 1.6; overflow-x: hidden;
+  }
+  h1, h2, h3, h4 { color: var(--ink); line-height: 1.2; }
+  a { color: var(--blue); }
+  b, strong { color: var(--ink); font-weight: 600; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 var(--gutter); }
+  .grad-text { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+  /* ---------- Progress ---------- */
+  .progress {
+    position: sticky; top: 0; z-index: 30;
+    background: rgba(255,255,255,.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .progress .wrap { display: flex; align-items: center; gap: 12px; height: 46px; }
+  .progress-label { font-size: 13px; font-weight: 500; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .progress-label b { color: var(--blue); }
+  .bar { flex: 1; height: 8px; border-radius: 99px; background: var(--line); overflow: hidden; }
+  .bar-fill { height: 100%; width: 0; background: var(--grad); border-radius: 99px; transition: width .4s ease; }
+  .pct { font-size: 13px; font-weight: 700; color: var(--ink); min-width: 38px; text-align: right; font-variant-numeric: tabular-nums; }
+
+  /* ---------- Hero ---------- */
+  .hero { background: var(--hero); color: #fff; position: relative; overflow: hidden; padding: 48px 0 56px; }
+  .hero::before, .hero::after {
+    content: ""; position: absolute; border-radius: 50%; filter: blur(10px); opacity: .45; pointer-events: none;
+  }
+  .hero::before { width: 260px; height: 260px; background: #7c3aed; top: -80px; right: -90px; }
+  .hero::after { width: 200px; height: 200px; background: #06b6d4; bottom: -90px; left: -70px; opacity: .3; }
+  .hero .wrap { position: relative; z-index: 1; }
+  .brand { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 22px; }
+  .brand-id { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; min-width: 0; }
+  .logo { flex: none; width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; font-weight: 800; font-size: 15px; color: #fff; background: var(--grad); box-shadow: 0 6px 16px rgba(124,58,237,.45); }
+  .brand-name { font-weight: 700; font-size: 15px; line-height: 1.2; }
+  .brand-name small { display: block; font-weight: 400; font-size: 12px; opacity: .75; }
+  .brand-call { flex: none; display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 12px; border-radius: 99px; font-size: 13px; font-weight: 600; color: #fff; text-decoration: none; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.25); }
+
+  /* Branded contact card (middle + footer) */
+  .contact-card { margin-top: 18px; padding: 20px; text-align: center; border: 2px solid var(--blue); }
+  .contact-card h3 { font-size: 18px; margin-bottom: 4px; }
+  .contact-card p { color: var(--muted); font-size: 14.5px; margin-bottom: 14px; }
+  .contact-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .btn.wa { background: #16a34a; box-shadow: 0 10px 24px rgba(22,163,74,.25); }
+  .foot-brand { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .foot-brand .logo { width: 48px; height: 48px; font-size: 17px; }
+  .foot-brand div { text-align: left; }
+  .foot-brand b { color: #fff; font-size: 19px; display: block; line-height: 1.2; }
+  .foot-brand a { color: #c7d2fe; text-decoration: none; font-size: 14.5px; }
+  .pill { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; padding: 6px 12px; border-radius: 99px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); }
+  .hero h1 { color: #fff; font-size: clamp(32px, 8.5vw, 50px); font-weight: 800; letter-spacing: -0.02em; margin: 16px 0 12px; }
+  .hero h1 span { background: linear-gradient(90deg, #93c5fd, #c4b5fd); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero p.sub { font-size: 17px; opacity: .9; max-width: 560px; margin-bottom: 22px; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 24px; }
+  .stat { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.16); border-radius: 12px; padding: 10px 8px; text-align: center; }
+  .stat b { display: block; color: #fff; font-size: 20px; font-weight: 700; line-height: 1.2; }
+  .stat span { font-size: 12px; opacity: .8; }
+  .hero-actions { display: grid; gap: 10px; }
+  @media (min-width: 520px) { .hero-actions { grid-template-columns: 1fr 1fr; } }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 52px; padding: 0 22px; border-radius: 12px; border: 0;
+    font: 600 15.5px "Poppins", system-ui, sans-serif; cursor: pointer; text-decoration: none;
+    background: var(--grad); color: #fff; box-shadow: var(--shadow-lg);
+    transition: transform .15s ease;
+  }
+  .btn:active { transform: scale(.97); }
+  .btn.white { background: #fff; color: var(--blue); box-shadow: none; }
+  .btn.glass { background: rgba(255,255,255,.12); color: #fff; border: 1px solid rgba(255,255,255,.3); box-shadow: none; }
+  .btn.outline { background: #fff; color: var(--ink); border: 1px solid var(--line); box-shadow: none; }
+  .btn.sm { min-height: 40px; padding: 0 14px; font-size: 14px; border-radius: 10px; }
+
+  /* ---------- Sections ---------- */
+  section.block { padding: 44px 0 4px; scroll-margin-top: 50px; }
+  .kicker { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--blue); background: var(--blue-soft); padding: 4px 10px; border-radius: 99px; margin-bottom: 10px; }
+  .section-title { font-size: clamp(24px, 6.5vw, 32px); font-weight: 700; margin-bottom: 8px; }
+  .section-lead { color: var(--muted); margin-bottom: 22px; }
+  .card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); }
+
+  /* ---------- Who chips ---------- */
+  .who { padding: 18px; margin-top: -28px; position: relative; z-index: 2; }
+  .who h2 { font-size: 15px; margin-bottom: 8px; }
+  .who p { font-size: 14px; color: var(--muted); margin-bottom: 10px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips span { font-size: 13px; padding: 4px 11px; border-radius: 99px; background: var(--blue-soft); color: var(--blue); font-weight: 500; }
+
+  /* ---------- Skill path tabs ---------- */
+  .tabs { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 12px; margin: 0 calc(-1 * var(--gutter)); padding-left: var(--gutter); padding-right: var(--gutter); scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    flex: none; display: inline-flex; align-items: center; gap: 6px;
+    min-height: 44px; padding: 0 16px; border-radius: 99px; cursor: pointer;
+    font: 500 14px "Poppins", system-ui, sans-serif; color: var(--ink);
+    background: #fff; border: 1px solid var(--line);
+  }
+  .tab[aria-selected="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .path { padding: 20px; }
+  .path-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .path-icon { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; font-size: 24px; background: var(--blue-soft); flex: none; }
+  .path-head h3 { font-size: 19px; }
+  .path-head p { font-size: 13.5px; color: var(--muted); }
+  .path-grid { display: grid; gap: 12px; }
+  @media (min-width: 600px) { .path-grid { grid-template-columns: 1fr 1fr; } }
+  .path-box { background: var(--bg); border-radius: 12px; padding: 14px; }
+  .path-box h4 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+  .path-box ul { padding-left: 18px; }
+  .path-box li { margin-bottom: 3px; font-size: 14.5px; }
+  .path-box li::marker { color: var(--blue); }
+  .path-money { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; padding: 12px 14px; border-radius: 12px; background: var(--green-soft); }
+  .path-money span { font-size: 13.5px; color: var(--muted); }
+  .path-money b { color: var(--green); font-size: 16px; white-space: nowrap; }
+
+  /* ---------- Timeline ---------- */
+  .steps { list-style: none; position: relative; }
+  .steps::before { content: ""; position: absolute; left: 21px; top: 24px; bottom: 24px; width: 3px; border-radius: 3px; background: linear-gradient(#2563eb, #7c3aed); opacity: .25; }
+  .step { position: relative; padding-left: 58px; margin-bottom: 16px; scroll-margin-top: 58px; }
+  .num {
+    position: absolute; left: 0; top: 10px; width: 45px; height: 45px; border-radius: 50%;
+    display: grid; place-items: center; font-weight: 700; font-size: 16px;
+    background: #fff; color: var(--blue); border: 3px solid var(--blue);
+    box-shadow: 0 0 0 5px var(--bg); transition: all .25s;
+  }
+  .step.done .num { background: var(--green); border-color: var(--green); color: #fff; }
+  .step .card { overflow: hidden; border: 2px solid transparent; transition: border-color .25s; }
+  .step.done .card { border-color: rgba(22,163,74,.35); }
+  .toggle {
+    width: 100%; display: flex; align-items: center; gap: 12px; padding: 16px; min-height: 64px;
+    background: none; border: 0; color: inherit; text-align: left; cursor: pointer; font: inherit;
+  }
+  .toggle-text { flex: 1; min-width: 0; }
+  .toggle .phase-tag { display: block; font-size: 11.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--violet); margin-bottom: 1px; }
+  .toggle h3 { font-size: 17px; font-weight: 600; }
+  .toggle .one-liner { display: block; font-size: 13.5px; color: var(--muted); margin-top: 2px; }
+  .chev { flex: none; width: 30px; height: 30px; padding: 6px; border-radius: 50%; background: var(--blue-soft); color: var(--blue); transition: transform .25s; }
+  .toggle[aria-expanded="true"] .chev { transform: rotate(180deg); }
+  .body { padding: 0 16px 18px; }
+  .body[hidden] { display: none; }
+  .body > ul { padding-left: 20px; margin-bottom: 14px; }
+  .body > ul li { margin-bottom: 7px; }
+  .body > ul li::marker { color: var(--blue); }
+  .body p { margin-bottom: 12px; }
+  .tip { display: flex; gap: 10px; padding: 12px 14px; border-radius: 12px; background: #fffbeb; border: 1px solid #fde68a; font-size: 14px; margin-bottom: 14px; }
+  .tip::before { content: "💡"; flex: none; }
+  .warn { display: flex; gap: 10px; padding: 12px 14px; border-radius: 12px; background: var(--red-soft); border: 1px solid #fecaca; font-size: 14px; margin-bottom: 14px; }
+  .warn::before { content: "⚠️"; flex: none; }
+
+  .task { display: flex; align-items: flex-start; gap: 12px; padding: 14px; border-radius: 12px; cursor: pointer; background: var(--blue-soft); border: 1.5px dashed #bfd3fe; position: relative; }
+  .task input { position: absolute; opacity: 0; pointer-events: none; }
+  .box { flex: none; width: 26px; height: 26px; border-radius: 8px; border: 2px solid var(--blue); background: #fff; display: grid; place-items: center; transition: all .15s; }
+  .box svg { width: 15px; height: 15px; opacity: 0; color: #fff; }
+  .task input:checked + .box { background: var(--green); border-color: var(--green); }
+  .task input:checked + .box svg { opacity: 1; }
+  .task input:focus-visible + .box { outline: 3px solid #93c5fd; outline-offset: 2px; }
+  .task-text { font-weight: 500; color: var(--ink); }
+  .task-text small { display: block; font-size: 11.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--blue); }
+  .task input:checked ~ .task-text span { color: var(--muted); text-decoration: line-through; }
+  .step.done .task { background: var(--green-soft); border-color: #bbf7d0; }
+  .next { margin-top: 12px; width: 100%; }
+
+  /* Mini tools inside steps */
+  .tool-card { background: var(--bg); border-radius: 12px; padding: 14px; margin-bottom: 14px; }
+  .tool-card h4 { font-size: 14px; margin-bottom: 10px; }
+  .field { display: block; margin-bottom: 8px; }
+  .field span { display: block; font-size: 12.5px; color: var(--muted); margin-bottom: 3px; }
+  .field input { width: 100%; min-height: 44px; padding: 0 12px; border-radius: 10px; border: 1px solid var(--line); font: 400 16px "Poppins", system-ui, sans-serif; color: var(--ink); background: #fff; }
+  .field input:focus { outline: 2px solid #93c5fd; border-color: var(--blue); }
+  .output { margin: 10px 0; padding: 12px 14px; border-radius: 10px; background: #fff; border-left: 4px solid var(--blue); font-weight: 500; color: var(--ink); }
+  .template { position: relative; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px; margin-bottom: 10px; white-space: pre-wrap; font-size: 14px; color: var(--ink); }
+  .template-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .template-head h4 { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+  .copy { flex: none; font: 600 13px "Poppins", system-ui, sans-serif; color: var(--blue); background: var(--blue-soft); border: 0; border-radius: 8px; padding: 8px 12px; cursor: pointer; min-height: 36px; }
+
+  .mini-table { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin-bottom: 14px; background: #fff; }
+  .mini-table div { display: flex; justify-content: space-between; gap: 12px; padding: 10px 14px; font-size: 14.5px; }
+  .mini-table div + div { border-top: 1px solid var(--line); }
+  .mini-table b { color: var(--green); white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+  .checklist { list-style: none; margin-bottom: 14px; }
+  .checklist li { display: flex; gap: 8px; margin-bottom: 6px; font-size: 14.5px; }
+  .checklist li::before { content: "✓"; color: var(--green); font-weight: 700; flex: none; }
+
+  .done-banner { display: none; padding: 22px; border-radius: var(--radius); background: var(--grad); color: #fff; text-align: center; box-shadow: var(--shadow-lg); }
+  .done-banner.show { display: block; animation: pop .4s ease; }
+  .done-banner h3 { color: #fff; font-size: 21px; margin-bottom: 4px; }
+  @keyframes pop { from { transform: scale(.9); opacity: 0; } to { transform: none; opacity: 1; } }
+
+  /* ---------- 30-60-90 ---------- */
+  .phases { display: grid; gap: 12px; }
+  @media (min-width: 640px) { .phases { grid-template-columns: repeat(3, 1fr); } }
+  .phase { padding: 18px; position: relative; }
+  .phase .when { font-size: 13px; font-weight: 600; color: var(--muted); }
+  .phase h3 { font-size: 21px; margin: 2px 0 10px; }
+  .phase ul { padding-left: 18px; font-size: 14.5px; }
+  .phase li { margin-bottom: 4px; }
+  .phase.key { background: var(--grad); color: #fff; box-shadow: var(--shadow-lg); }
+  .phase.key h3, .phase.key b { color: #fff; }
+  .phase.key .when { color: rgba(255,255,255,.8); }
+  .phase .flag { position: absolute; top: 14px; right: 14px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; padding: 3px 9px; border-radius: 99px; background: #fff; color: var(--violet); }
+
+  /* ---------- Grids ---------- */
+  .grid { display: grid; gap: 12px; }
+  @media (min-width: 600px) { .grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); } }
+  .gbox { padding: 18px; }
+  .gbox .ico { font-size: 26px; margin-bottom: 6px; }
+  .gbox h3 { font-size: 17px; color: var(--blue); margin-bottom: 8px; }
+  .gbox ul { padding-left: 18px; font-size: 14.5px; }
+  .gbox li { margin-bottom: 4px; }
+  .gbox li span { color: var(--muted); font-size: 13px; }
+
+  .tiers { display: grid; gap: 12px; }
+  @media (min-width: 600px) { .tiers { grid-template-columns: repeat(3, 1fr); } }
+  .tier { padding: 18px; text-align: center; }
+  .tier .lvl { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+  .tier .amt { font-size: 22px; font-weight: 700; color: var(--ink); margin: 4px 0; }
+  .tier p { font-size: 13.5px; color: var(--muted); }
+  .tier.mid { border: 2px solid var(--blue); }
+
+  .packages { margin-top: 14px; padding: 18px; }
+  .packages h3 { font-size: 16px; margin-bottom: 12px; }
+  .pkg-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .pkg { border: 1px solid var(--line); border-radius: 12px; padding: 12px 8px; text-align: center; position: relative; }
+  .pkg.pop { border: 2px solid var(--violet); background: #f5f3ff; }
+  .pkg .badge { position: absolute; top: -10px; left: 50%; transform: translateX(-50%); font-size: 10.5px; font-weight: 600; white-space: nowrap; padding: 2px 8px; border-radius: 99px; background: var(--violet); color: #fff; }
+  .pkg h4 { font-size: 13.5px; }
+  .pkg .p { font-size: 17px; font-weight: 700; color: var(--ink); margin: 2px 0 6px; }
+  .pkg ul { list-style: none; font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+  /* ---------- Mistakes ---------- */
+  .mistakes { list-style: none; display: grid; gap: 10px; }
+  .mistakes li { display: flex; gap: 12px; padding: 14px; }
+  .mistakes .x { flex: none; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--red-soft); color: var(--red); font-weight: 700; }
+  .mistakes b { display: block; }
+  .mistakes span.d { font-size: 14px; color: var(--muted); }
+
+  /* ---------- FAQ ---------- */
+  .faq { display: grid; gap: 10px; }
+  .faq details { background: #fff; border-radius: 14px; box-shadow: var(--shadow); overflow: hidden; }
+  .faq summary { list-style: none; cursor: pointer; padding: 16px; font-weight: 600; color: var(--ink); display: flex; justify-content: space-between; gap: 12px; align-items: center; min-height: 56px; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; flex: none; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: var(--blue-soft); color: var(--blue); font-size: 18px; transition: transform .2s; }
+  .faq details[open] summary::after { transform: rotate(45deg); }
+  .faq details p { padding: 0 16px 16px; font-size: 14.5px; }
+
+  /* ---------- Golden rules / formula ---------- */
+  .rules { padding: 20px; }
+  .rules ol { counter-reset: r; list-style: none; display: grid; gap: 10px; }
+  @media (min-width: 600px) { .rules ol { grid-template-columns: 1fr 1fr; } }
+  .rules li { counter-increment: r; display: flex; gap: 10px; align-items: center; font-weight: 500; color: var(--ink); }
+  .rules li::before { content: counter(r); flex: none; width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; font-size: 13px; font-weight: 700; color: #fff; background: var(--grad); }
+  .formula { margin-top: 14px; padding: 24px 18px; text-align: center; background: var(--hero); color: #fff; border-radius: var(--radius); }
+  .formula .eq { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px 8px; font-weight: 600; }
+  .formula .t { padding: 6px 12px; border-radius: 99px; background: rgba(255,255,255,.14); }
+  .formula .op { opacity: .7; }
+  .formula .res { display: block; margin-top: 12px; font-size: 22px; font-weight: 800; }
+  .formula .res span { background: linear-gradient(90deg, #93c5fd, #c4b5fd); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+  /* ---------- Footer ---------- */
+  footer { margin-top: 52px; background: var(--hero); color: #fff; padding: 40px 0 calc(40px + env(safe-area-inset-bottom)); text-align: center; }
+  footer h2 { color: #fff; font-size: 22px; margin-bottom: 6px; }
+  footer p.tl { opacity: .8; margin-bottom: 20px; font-size: 14.5px; }
+  .foot-actions { display: grid; gap: 10px; max-width: 420px; margin: 0 auto; }
+  .motto { margin-top: 26px; font-size: 13px; letter-spacing: .04em; opacity: .75; }
+  .foot-small { margin-top: 14px; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; font-size: 13px; opacity: .7; }
+  .linkbtn { background: none; border: 0; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; }
+
+  .toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom)); transform: translate(-50%, 20px); background: var(--ink); color: #fff; padding: 10px 18px; border-radius: 99px; font-size: 14px; font-weight: 500; opacity: 0; pointer-events: none; transition: all .25s; z-index: 50; max-width: calc(100% - 32px); text-align: center; }
+  .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+  /* Reveal on scroll */
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity .5s ease, transform .5s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, .reveal { transition: none !important; animation: none !important; opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="progress" role="status" aria-live="polite">
+  <div class="wrap">
+    <span class="progress-label">Your progress <b id="doneCount">0</b>/10</span>
+    <div class="bar" aria-hidden="true"><div class="bar-fill" id="barFill"></div></div>
+    <span class="pct" id="pct">0%</span>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <a class="brand-id js-ig" href="#" target="_blank" rel="noopener">
+        <span class="logo">ST</span>
+        <span class="brand-name"><span class="js-brand">Sudarshan_Technicals</span><small>Freelancing tips & web services</small></span>
+      </a>
+      <a class="brand-call js-tel" href="#" aria-label="Call Sudarshan_Technicals">📞 Call</a>
+    </div>
+    <span class="pill">🚀 Free guide by <span class="js-brand">Sudarshan_Technicals</span></span>
+    <h1>Freelancing Roadmap for <span>Freshers</span></h1>
+    <p class="sub">From zero to your first paying client: a step-by-step guide with templates, pricing and a 90-day plan.</p>
+    <div class="stats">
+      <div class="stat"><b>10</b><span>steps</span></div>
+      <div class="stat"><b>~60</b><span>days to client #1</span></div>
+      <div class="stat"><b>₹0</b><span>to start</span></div>
+    </div>
+    <div class="hero-actions">
+      <button class="btn white" id="startBtn" type="button">Start Step 1 →</button>
+      <a class="btn glass" href="#paths">Pick your skill 🎯</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="card who reveal">
+    <h2>👋 Who this is for</h2>
+    <p>Students, freshers, and anyone with a skill who wants their first paid client. No degree or big investment needed, just a laptop or even a phone.</p>
+    <div class="chips">
+      <span>Development</span><span>Design</span><span>Video editing</span><span>Content writing</span><span>Social media</span><span>AI automation</span>
+    </div>
+  </div>
+
+  <!-- ================= SKILL PATHS ================= -->
+  <section class="block" id="paths" aria-labelledby="pathsTitle">
+    <span class="kicker">Before you start</span>
+    <h2 class="section-title" id="pathsTitle">Choose your <span class="grad-text">skill path</span></h2>
+    <p class="section-lead">Tap a skill to see what to learn, what to sell first, and what beginners usually charge.</p>
+
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="card path reveal" id="pathCard" role="tabpanel" aria-live="polite"></div>
+  </section>
+
+  <!-- ================= ROADMAP ================= -->
+  <section class="block" id="roadmap" aria-labelledby="stepsTitle">
+    <span class="kicker">The roadmap</span>
+    <h2 class="section-title" id="stepsTitle">10 steps to your <span class="grad-text">first client</span></h2>
+    <p class="section-lead">Tap a step to open it. Each one ends with a single action. Tick it when done; your progress is saved on this phone.</p>
+
+    <ol class="steps" id="steps">
+
+      <!-- 1 -->
+      <li class="step" id="step-1">
+        <div class="num">1</div>
+        <div class="card">
+          <button class="toggle" type="button" aria-expanded="false">
+            <span class="toggle-text"><span class="phase-tag">Foundation</span><h3>Pick one skill and one service</h3><span class="one-liner">Sell one clear thing, not everything.</span></span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="body" hidden>
+            <ul>
+              <li>Don't sell "everything". Sell one clear service, such as <b>"websites for local businesses"</b> or <b>"Reels editing for creators"</b>.</li>
+              <li>Choose a skill you can already deliver at a basic level. You'll learn the rest on real projects.</li>
+              <li>Pick a <b>niche</b> (gyms, cafés, doctors, coaches, real estate). "Websites for clinics" is easier to sell than "websites for anyone".</li>
+            </ul>
+            <div class="tool-card">
+              <h4>✍️ Build your one-liner</h4>
+              <label class="field"><span>I help… (who)</span><input id="ol-who" placeholder="local gyms" autocomplete="off"></label>
+              <label class="field"><span>get… (result)</span><input id="ol-what" placeholder="more members" autocomplete="off"></label>
+              <label class="field"><span>by… (how)</span><input id="ol-how" placeholder="building a fast, mobile-friendly website" autocomplete="off"></label>
+              <div class="output" id="ol-out">I help local gyms get more members by building a fast, mobile-friendly website.</div>
+              <button class="copy" type="button" data-copy-from="ol-out">Copy my one-liner</button>
+            </div>
+            <label class="task"><input type="checkbox" data-step="1"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="m5 12 5 5 9-10"/></svg></span><span class="task-text"><small>Your action</small><span>Write one sentence: "I help ___ get ___ by ___."</span></span></label>
+          </div>
+        </div>
+      </li>
+
+      <!-- 2 -->
+      <li class="step" id="step-2">
+        <div class="num">2</div>
+        <div class="card">
+          <button class="toggle" type="button" aria-expanded="false">
+            <span class="toggle-text"><span class="phase-tag">Foundation</span><h3>Learn the basics, fast</h3><span class="one-liner">Learn by building, not by watching.</span></span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="body" hidden>
+            <ul>
+              <li>Give yourself <b>2–4 weeks</b> of focused learning, 1–2 hours a day.</li>
+              <li>Follow the <b>70/30 rule</b>: 30% watching tutorials, 70% building things yourself.</li>
+              <li>Learn only what your service needs. A wedding-reel editor doesn't need colour grading for films on day one.</li>
+              <li>Learn the "business" side too: how to talk to clients, write a clear message, and say no politely.</li>
+            </ul>
+            <div class="tip">Stuck in "tutorial hell"? Pick one real business near you and redesign or remake their stuff as practice. That becomes your portfolio too.</div>
+            <label class="task"><input type="checkbox" data-step="2"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="m5 12 5 5 9-10"/></svg></span><span class="task-text"><small>Your action</small><span>Finish one full mini-project on your own, without a tutorial.</span></span></label>
+          </div>
+        </div>
+      </li>
+
+      <!-- 3 -->
+      <li class="step" id="step-3">
+        <div class="num">3</div>
+        <div class="card">
+          <button class="toggle" type="button" aria-expanded="false">
+            <span class="toggle-text"><span class="phase-tag">Foundation</span><h3>Build 3 proof projects</h3><span class="one-liner">Clients pay for proof, not certificates.</span></span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="body" hidden>
+            <ul>
+              <li>Make 3 sample projects that look like real client work, for example a café website, a clinic website, or a gym landing page.</li>
+              <li>Or do 1–2 projects free or cheap for a friend's or relative's business in exchange for a <b>testimonial</b>.</li>
+              <li>For each project, write a 3-line story: <b>the problem → what you made → the result</b>. Clients love before/after.</li>
+            </ul>
+            <div class="tip">3 strong projects in your niche beat 15 random ones. Quality and relevance win.</div>
+            <label class="task"><input type="checkbox" data-step="3"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="m5 12 5 5 9-10"/></svg></span><span class="task-text"><small>Your action</small><span>3 projects live with links.</span></span></label>
+          </div>
+        </div>
+      </li>
+
+      <!-- 4 -->
+      <li class="step" id="step-4">
+        <div class="num">4</div>
+        <div class="card">
+          <button class="toggle" type="button" aria-expanded="false">
+            <span class="toggle-text"><span class="phase-tag">Foundation</span><h3>Set up your online presence</h3><span class="one-liner">Make it easy for clients to find and trust you.</span></span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="body" hidden>
+            <ul>
+              <li>A simple <b>portfolio page</b> with your service, projects, and a contact button.</li>
+              <li>An <b>Instagram or LinkedIn</b> profile that clearly states what you do. Use your one-liner as your bio.</li>
+              <li>A <b>WhatsApp Business</b> account with a catalogue, a greeting message and quick replies.</li>
+              <li>A <b>professional email</b> (yourname.work@gmail.com is fine to start).</li>
+              <li>Pin 3 posts: your best work, a client result, and "how to work with me".</li>
+            </ul>
+            <label class="task"><input type="checkbox" data-step="4"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="m5 12 5 5 9-10"/></svg></span><span class="task-text"><small>Your action</small><span>Bio rewritten, portfolio live.</span></span></label>
+          </div>
+        </div>
+      </li>
+
+      <!-- 5 -->
+      <li class="step" id="step-5">
+        <div class="num">5</div>
+        <div class="card">
+          <button class="toggle" type="button" aria-expanded="false">
+            <span class="toggle-text"><span class="phase-tag">Win clients</span><h3>Find your first client</h3><span class="one-liner">Your first client is usually someone you already know.</span></span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="body" hidden>
+            <ul>
+              <li><b>Warm network first:</b> tell family, friends, seniors and teachers what you do.</li>
+              <li><b>Local businesses:</b> search Google Maps for businesses with no website or a weak one, then message them a short video showing what you'd improve.</li>
+              <li><b>Content:</b> post your work and your learning process on Instagram and LinkedIn.</li>
+              <li><b>Platforms:</b> Fiverr, Upwork, and Contra. Competition is heavy at the start, so treat them as a bonus channel.</li>
+            </ul>
+
+            <div class="template-head"><h4>First message (copy & edit)</h4><button class="copy" type="button" data-copy-from="tpl-dm">Copy</button></div>
+            <div class="template" id="tpl-dm">Hi [Name], I came across [Business] on Google Maps. Your reviews are great!
+
+I noticed [your website is slow on mobile / you don't have a website yet], so customers searching online might be going to competitors.
+
+I made a quick 1-minute video showing how I'd fix it. Can I send it here?
+
+– [Your name], [your service]</div>
+
+            <div class="template-head"><h4>Follow-up after 3 days</h4><button class="copy" type="button" data-copy-from="tpl-fu">Copy</button></div>
+            <div class="template" id="tpl-fu">Hi [Name], just following up on my last message. I'd be happy to share that short video with ideas for [Business]. No pressure at all, just let me know if it's useful 🙂</div>
+
+            <div class="tip">Personalise the first line every time. 5 thoughtful messages beat 50 copy-paste ones.</div>
+            <label class="task"><input type="checkbox" data-step="5"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="m5 12 5 5 9-10"/></svg></span><span class="task-text"><small>Your action</small><span>Send 5 personalised messages a day, not copy-paste spam.</span></span></label>
+          </div>
+        </div>
+      </li>
+
+      <!-- 6 -->
+      <li class="step" id="step-6">
+        <div class="num">6</div>
+        <div class="card">
+          <button class="toggle" type="button" aria-expanded="false">
+            <span class="toggle-text"><span class="phase-tag">Win clients</span><h3>Price your work</h3><span class="one-liner">Charge per project, not per hour, at the start.</span></span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="body" hidden>
+            <p>Beginner ranges in India, as a rough guide:</p>
+            <div class="mini-table">
+              <div><span>Simple business website</span><b>₹5,000–15,000</b></div>
+              <div><span>Social media post design</span><b>₹300–1,000</b></div>
+              <div><span>Reel edit</span><b>₹500–2,000</b></div>
+              <div><span>Blog article (1,000 words)</span><b>₹500–2,000</b></div>
+              <div><span>Social media management / month</span><b>₹5,000–15,000</b></div>
+            </div>
+            <ul>
+              <li>Prices vary by city, niche and quality.</li>
+              <li>Raise your price after every 2–3 happy clients.</li>
+              <li>Offer 3 packages (Basic, Standard, Premium). Most clients pick the middle one. <a href="#pricing">See an example ↓</a></li>
+            </ul>
+            <label class="task"><input type="checkbox" data-step="6"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="m5 12 5 5 9-10"/></svg></span><span class="task-text"><small>Your action</small><span>Make your price list with 3 packages.</span></span></label>
+          </div>
+        </div>
+      </li>
+
+      <!-- 7 -->
+      <li class="step" id="step-7">
+        <div class="num">7</div>
+        <div class="card">
+          <button class="toggle" type="button" aria-expanded="false">
+            <span class="toggle-text"><span class="phase-tag">Win clients</span><h3>Close the deal properly</h3><span class="one-liner">Discovery call, written quote, 50% advance.</span></span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="body" hidden>
+            <ul>
+              <li>Do a <b>15-minute discovery call</b>: what does the client need, by when, and with what budget?</li>
+              <li>Send a <b>written quotation</b> the same day.</li>
+              <li><b>Always take a 50% advance</b> before starting.</li>
+              <li>Put everything in writing, even if it's only on WhatsApp.</li>
+            </ul>
+            <div class="tool-card">
+              <h4>📄 Every quotation must include</h4>
+              <ul class="checklist">
+                <li>Scope: exactly what you will deliver (and what you won't)</li>
+                <li>Timeline with a delivery date</li>
+                <li>Price and payment terms (50% now, 50% on delivery)</li>
+                <li>Number of revision rounds (e.g. 2)</li>
+                <li>What the client must provide (logo, photos, text)</li>
+              </ul>
+            </div>
+            <label class="task"><input type="checkbox" data-step="7"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="m5 12 5 5 9-10"/></svg></span><span class="task-text"><small>Your action</small><span>Have a quotation template ready.</span></span></label>
+          </div>
+        </div>
+      </li>
+
+      <!-- 8 -->
+      <li class="step" id="step-8">
+        <div class="num">8</div>
+        <div class="card">
+          <button class="toggle" type="button" aria-expanded="false">
+            <span class="toggle-text"><span class="phase-tag">Deliver</span><h3>Deliver like a pro</h3><span class="one-liner">Regular updates, limited revisions, on time.</span></span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="body" hidden>
+            <ul>
+              <li>Share progress updates every 2–3 days, even if it's just a screenshot.</li>
+              <li>Agree on a limit of 2 revision rounds. Anything new beyond that is charged extra.</li>
+              <li>Deliver on time, even if it means going a little early.</li>
+              <li>Keep the domain, hosting, and accounts in the <b>client's name</b>.</li>
+              <li>Send a handover: files, logins, a short "how to use it" video, and your support terms.</li>
+            </ul>
+            <div class="tip">Underpromise, overdeliver. Say 7 days, deliver in 6. That's how you get referrals.</div>
+            <label class="task"><input type="checkbox" data-step="8"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="m5 12 5 5 9-10"/></svg></span><span class="task-text"><small>Your action</small><span>Final delivery plus a handover message.</span></span></label>
+          </div>
+        </div>
+      </li>
+
+      <!-- 9 -->
+      <li class="step" id="step-9">
+        <div class="num">9</div>
+        <div class="card">
+          <button class="toggle" type="button" aria-expanded="false">
+            <span class="toggle-text"><span class="phase-tag">Deliver</span><h3>Get paid and handle the basics</h3><span class="one-liner">Invoices, a separate account, simple tracking.</span></span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="body" hidden>
+            <ul>
+              <li>Send a proper <b>invoice</b> and collect payment through UPI or bank transfer.</li>
+              <li>For foreign clients, use a service like Payoneer, Wise or PayPal, and keep the payment records your bank gives you.</li>
+              <li>Keep a <b>separate bank account</b> for freelance income.</li>
+              <li>Track income and expenses in a simple sheet.</li>
+              <li>GST registration becomes mandatory only above the turnover threshold (currently ₹20 lakh for services in most states), but talk to a CA once you're earning regularly.</li>
+            </ul>
+            <div class="warn">Freelance income is taxable. File your ITR every year, even if the amount is small. It builds a record that helps with loans and visas later.</div>
+            <label class="task"><input type="checkbox" data-step="9"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="m5 12 5 5 9-10"/></svg></span><span class="task-text"><small>Your action</small><span>Invoice template and tracking sheet ready.</span></span></label>
+          </div>
+        </div>
+      </li>
+
+      <!-- 10 -->
+      <li class="step" id="step-10">
+        <div class="num">10</div>
+        <div class="card">
+          <button class="toggle" type="button" aria-expanded="false">
+            <span class="toggle-text"><span class="phase-tag">Grow</span><h3>Grow beyond your first client</h3><span class="one-liner">Testimonials, referrals, recurring income.</span></span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="body" hidden>
+            <ul>
+              <li>Ask every happy client for a <b>testimonial, a Google review, and 2 referrals</b>.</li>
+              <li>Offer monthly maintenance or support for <b>recurring income</b> (retainers).</li>
+              <li>Turn each project into content: before/after shots, a walkthrough reel, a case study.</li>
+              <li>Create reusable templates to deliver faster, then raise your price.</li>
+              <li>Later: build a small team, sell digital products, or teach what you learnt.</li>
+            </ul>
+            <div class="template-head"><h4>Testimonial request</h4><button class="copy" type="button" data-copy-from="tpl-review">Copy</button></div>
+            <div class="template" id="tpl-review">Hi [Name], it was great working with you on [project]! 🙏
+
+Could you share 2–3 lines about your experience? It really helps a fresher like me. And if you know anyone who needs [service], I'd be grateful for an intro.</div>
+            <label class="task"><input type="checkbox" data-step="10"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="m5 12 5 5 9-10"/></svg></span><span class="task-text"><small>Your action</small><span>First testimonial collected.</span></span></label>
+          </div>
+        </div>
+      </li>
+    </ol>
+
+    <div class="done-banner" id="doneBanner">
+      <h3>All 10 steps done 🎉</h3>
+      <p>You're officially a freelancer. Now raise your price!</p>
+    </div>
+
+    <div class="card contact-card reveal">
+      <h3>Stuck on a step? 🤝</h3>
+      <p>Talk to <b class="js-brand">Sudarshan_Technicals</b> · <span class="js-phone">+91 89753 73688</span></p>
+      <div class="contact-row">
+        <a class="btn sm js-tel" href="#">📞 Call</a>
+        <a class="btn sm wa js-wa" href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 30-60-90 ================= -->
+  <section class="block" aria-labelledby="planTitle">
+    <span class="kicker">Timeline</span>
+    <h2 class="section-title" id="planTitle">Your <span class="grad-text">30-60-90 day</span> plan</h2>
+    <p class="section-lead">Follow the plan and you should land a first paying client within about two months.</p>
+    <div class="phases">
+      <div class="card phase reveal">
+        <div class="when">Days 1–30</div>
+        <h3>🧱 Set up</h3>
+        <ul><li>Pick your skill</li><li>Learn the basics</li><li>Build 3 proof projects</li><li>Set up your profiles</li></ul>
+      </div>
+      <div class="card phase key reveal">
+        <span class="flag">Most important</span>
+        <div class="when">Days 31–60</div>
+        <h3>🎯 Win</h3>
+        <ul><li>Daily outreach</li><li>Discovery calls</li><li><b>Land your first client</b></li></ul>
+      </div>
+      <div class="card phase reveal">
+        <div class="when">Days 61–90</div>
+        <h3>📈 Grow</h3>
+        <ul><li>Deliver the project</li><li>Collect a review</li><li>Get a referral</li><li>Raise your price</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRICING ================= -->
+  <section class="block" id="pricing" aria-labelledby="priceTitle">
+    <span class="kicker">Money</span>
+    <h2 class="section-title" id="priceTitle">Pricing <span class="grad-text">strategy</span></h2>
+    <p class="section-lead">What a typical project pays as you grow. These are rough ranges for Indian clients.</p>
+    <div class="tiers">
+      <div class="card tier reveal"><div class="lvl">🌱 Beginner</div><div class="amt">₹3k – 15k</div><p>0–5 clients. Focus on testimonials.</p></div>
+      <div class="card tier mid reveal"><div class="lvl">⚡ Intermediate</div><div class="amt">₹15k – 50k</div><p>Strong portfolio, niche focus, referrals.</p></div>
+      <div class="card tier reveal"><div class="lvl">👑 Expert</div><div class="amt">₹50k+</div><p>Known name, retainers, bigger clients.</p></div>
+    </div>
+
+    <div class="card packages reveal">
+      <h3>Example: 3 packages for a business website</h3>
+      <div class="pkg-row">
+        <div class="pkg"><h4>Basic</h4><div class="p">₹6k</div><ul><li>1 page</li><li>WhatsApp button</li><li>1 revision</li></ul></div>
+        <div class="pkg pop"><span class="badge">Most picked</span><h4>Standard</h4><div class="p">₹12k</div><ul><li>5 pages</li><li>Contact form</li><li>Google Maps</li><li>2 revisions</li></ul></div>
+        <div class="pkg"><h4>Premium</h4><div class="p">₹20k</div><ul><li>Everything in Standard</li><li>Basic SEO</li><li>1 month support</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PLATFORMS ================= -->
+  <section class="block" aria-labelledby="platTitle">
+    <span class="kicker">Where to go</span>
+    <h2 class="section-title" id="platTitle">Useful <span class="grad-text">platforms</span></h2>
+    <p class="section-lead">Where to find clients, show your work, and keep learning. All free to join.</p>
+    <div class="grid">
+      <div class="card gbox reveal"><div class="ico">💼</div><h3>Find clients</h3><ul><li>Fiverr <span>· gigs</span></li><li>Upwork <span>· proposals</span></li><li>Contra <span>· 0% commission</span></li><li>Freelancer</li><li>LinkedIn & Instagram DMs</li></ul></div>
+      <div class="card gbox reveal"><div class="ico">🖼️</div><h3>Show your work</h3><ul><li>GitHub <span>· developers</span></li><li>Behance <span>· designers</span></li><li>Dribbble <span>· UI/UX</span></li><li>Instagram <span>· reels & design</span></li><li>Your own portfolio site</li></ul></div>
+      <div class="card gbox reveal"><div class="ico">📚</div><h3>Learn for free</h3><ul><li>YouTube</li><li>freeCodeCamp</li><li>Google Digital Garage</li><li>Canva Design School</li><li>HubSpot Academy</li></ul></div>
+    </div>
+  </section>
+
+  <!-- ================= TOOLS ================= -->
+  <section class="block" aria-labelledby="toolsTitle">
+    <span class="kicker">Tool kit</span>
+    <h2 class="section-title" id="toolsTitle">Free <span class="grad-text">tool kit</span></h2>
+    <p class="section-lead">Everything you need to start, at zero cost.</p>
+    <div class="grid">
+      <div class="card gbox reveal"><div class="ico">🌐</div><h3>Portfolio</h3><ul><li>GitHub Pages</li><li>Netlify</li><li>Canva Sites</li></ul></div>
+      <div class="card gbox reveal"><div class="ico">🎨</div><h3>Design & video</h3><ul><li>Canva, Figma</li><li>CapCut</li><li>DaVinci Resolve</li></ul></div>
+      <div class="card gbox reveal"><div class="ico">💻</div><h3>Development</h3><ul><li>VS Code</li><li>GitHub</li><li>Chrome DevTools</li></ul></div>
+      <div class="card gbox reveal"><div class="ico">🧾</div><h3>Proposals & money</h3><ul><li>Google Docs <span>· quotes</span></li><li>Google Sheets <span>· tracking</span></li><li>Zoho Invoice</li></ul></div>
+      <div class="card gbox reveal"><div class="ico">💬</div><h3>Communication</h3><ul><li>WhatsApp Business</li><li>Google Meet</li><li>Calendly <span>· booking calls</span></li></ul></div>
+      <div class="card gbox reveal"><div class="ico">🤖</div><h3>AI helpers</h3><ul><li>Claude / ChatGPT <span>· drafts, ideas</span></li><li>Grammarly <span>· clean writing</span></li><li>Use AI to speed up, not replace, your work</li></ul></div>
+    </div>
+  </section>
+
+  <!-- ================= MISTAKES ================= -->
+  <section class="block" aria-labelledby="mistakesTitle">
+    <span class="kicker">Avoid these</span>
+    <h2 class="section-title" id="mistakesTitle">Mistakes that <span class="grad-text">cost freshers</span></h2>
+    <p class="section-lead">Most beginners lose clients (or money) to these.</p>
+    <ul class="mistakes">
+      <li class="card reveal"><span class="x">✕</span><span><b>Working without an advance</b><span class="d">No advance, no start. 50% is standard.</span></span></li>
+      <li class="card reveal"><span class="x">✕</span><span><b>Allowing unlimited revisions</b><span class="d">Fix the number in your quote. Extra rounds are paid.</span></span></li>
+      <li class="card reveal"><span class="x">✕</span><span><b>Underpricing forever</b><span class="d">Cheap is fine for 2–3 clients, then raise prices.</span></span></li>
+      <li class="card reveal"><span class="x">✕</span><span><b>Selling 10 services at once</b><span class="d">One clear service is easier to sell and to master.</span></span></li>
+      <li class="card reveal"><span class="x">✕</span><span><b>Not following up</b><span class="d">Most deals close on the second or third message.</span></span></li>
+      <li class="card reveal"><span class="x">✕</span><span><b>Disappearing mid-project</b><span class="d">Even a "running 1 day late, sorry" message saves trust.</span></span></li>
+      <li class="card reveal"><span class="x">✕</span><span><b>Buying courses before getting clients</b><span class="d">Free resources are enough to land your first 3 clients.</span></span></li>
+    </ul>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="block" aria-labelledby="faqTitle">
+    <span class="kicker">FAQ</span>
+    <h2 class="section-title" id="faqTitle">Questions <span class="grad-text">freshers ask</span></h2>
+    <div class="faq">
+      <details><summary>Do I need a degree or certificate?</summary><p>No. Clients care about what you can deliver. Three good sample projects and one testimonial matter more than any certificate.</p></details>
+      <details><summary>Can I freelance while in college?</summary><p>Yes. Start with 1–2 hours a day and small projects. Be honest with clients about your available time and set realistic deadlines.</p></details>
+      <details><summary>Should I start on Fiverr/Upwork or with local clients?</summary><p>Start local and with your network: less competition and more trust. Use platforms in parallel as a bonus channel once you have some portfolio pieces.</p></details>
+      <details><summary>What if a client doesn't pay?</summary><p>That's why you take 50% upfront and share final files only after full payment. Share watermarked previews or a staging link until then.</p></details>
+      <details><summary>How do I handle a client who keeps asking for changes?</summary><p>Point to the quotation politely: "We agreed on 2 revision rounds. Happy to do this one, it'll be ₹___ extra." Clear scope keeps the relationship friendly.</p></details>
+      <details><summary>How long until I get my first client?</summary><p>If you send 5 personalised messages a day, most freshers land one within 30–60 days. Consistency is the whole game.</p></details>
+    </div>
+  </section>
+
+  <!-- ================= GOLDEN RULES ================= -->
+  <section class="block" aria-labelledby="rulesTitle">
+    <span class="kicker">Remember</span>
+    <h2 class="section-title" id="rulesTitle">Golden <span class="grad-text">rules</span></h2>
+    <div class="card rules reveal">
+      <ol>
+        <li>Learn one skill deeply.</li>
+        <li>Build real-looking projects.</li>
+        <li>Post your work consistently.</li>
+        <li>Reach out to businesses every day.</li>
+        <li>Always take an advance.</li>
+        <li>Collect every testimonial.</li>
+        <li>Raise prices with experience.</li>
+        <li>Build long-term relationships.</li>
+      </ol>
+    </div>
+    <div class="formula reveal">
+      <div class="eq">
+        <span class="t">Skill</span><span class="op">+</span>
+        <span class="t">Proof</span><span class="op">+</span>
+        <span class="t">Outreach</span><span class="op">+</span>
+        <span class="t">Consistency</span>
+      </div>
+      <span class="res">= <span>Freelancing Success 🚀</span></span>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-brand">
+      <span class="logo">ST</span>
+      <div><b class="js-brand">Sudarshan_Technicals</b><a class="js-tel" href="#">📞 Mobile: <span class="js-phone">+91 89753 73688</span></a></div>
+    </div>
+    <h2>Found this useful? 🙌</h2>
+    <p class="tl">Follow for more freelancing tips</p>
+    <div class="foot-actions">
+      <a class="btn white js-ig" href="#" target="_blank" rel="noopener">Follow on Instagram</a>
+      <div class="contact-row">
+        <a class="btn glass js-tel" href="#">📞 Call</a>
+        <a class="btn wa js-wa" href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+      <button class="btn glass" id="shareBtn" type="button">Share this roadmap 🔗</button>
+    </div>
+    <p class="motto">Start small · Stay consistent · Build your brand · Grow your income</p>
+    <div class="foot-small">
+      <span>© <span id="year"></span> <span class="js-brand">Sudarshan_Technicals</span> · Free forever</span>
+      <button class="linkbtn" id="resetBtn" type="button">Reset my progress</button>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+  /* ======= EDIT THESE ======= */
+  const CONFIG = {
+    brandName: "Sudarshan_Technicals",   // shown at the top, middle and footer
+    instagram: "sudarshan_technicals",   // Instagram username, no @
+    phone: "8975373688",                 // 10-digit mobile number
+    whatsappText: "Hi Sudarshan_Technicals, I saw your Freelancing Roadmap and have a question.",
+    shareText: "Free freelancing roadmap by Sudarshan_Technicals 👇"
+  };
+  /* ========================== */
+
+  /* ---------- Skill paths data ---------- */
+  const PATHS = [
+    { id: "web", icon: "💻", name: "Web Development", tagline: "Websites for local businesses",
+      learn: ["HTML, CSS, JavaScript", "Responsive design", "WordPress or React (pick one)", "Git & GitHub, deploying on Netlify"],
+      sell: "Simple 1–5 page business websites with a WhatsApp button",
+      projects: ["Café / restaurant site", "Clinic or doctor site", "Gym landing page"],
+      price: "₹5,000 – 15,000 / website" },
+    { id: "design", icon: "🎨", name: "Graphic & UI Design", tagline: "Posts, branding, app screens",
+      learn: ["Design basics: colour, type, spacing", "Canva for speed, Figma for UI", "Brand kits & social templates", "Mobile app / web UI patterns"],
+      sell: "Social media post packs (e.g. 10 posts / month)",
+      projects: ["Brand kit for a bakery", "10 Instagram posts for a salon", "App redesign concept"],
+      price: "₹300 – 1,000 / post" },
+    { id: "video", icon: "🎬", name: "Video Editing", tagline: "Reels for creators & brands",
+      learn: ["CapCut or Premiere Pro / DaVinci", "Hooks, pacing, jump cuts", "Captions, sound design, trends", "Exporting for Reels & Shorts"],
+      sell: "Reels editing packages for creators and coaches",
+      projects: ["Re-edit a podcast clip", "Product reel for a local shop", "Before/after edit showcase"],
+      price: "₹500 – 2,000 / reel" },
+    { id: "writing", icon: "✍️", name: "Content Writing", tagline: "Blogs, captions, website copy",
+      learn: ["Clear, simple writing", "SEO basics & keyword research", "Copywriting for ads & websites", "Using AI to draft, editing like a human"],
+      sell: "SEO blog posts or website copy for small businesses",
+      projects: ["3 blog posts in one niche", "Website copy rewrite", "Caption pack for a brand"],
+      price: "₹500 – 2,000 / article" },
+    { id: "smm", icon: "📱", name: "Social Media", tagline: "Manage pages for local brands",
+      learn: ["Content planning & calendars", "Canva + basic reel editing", "Instagram insights", "Meta ads basics"],
+      sell: "Monthly Instagram management for a local business",
+      projects: ["30-day content plan", "Grow a test page", "Audit of a local brand's page"],
+      price: "₹5,000 – 15,000 / month" },
+    { id: "ai", icon: "🤖", name: "AI Automation", tagline: "Save businesses time with AI",
+      learn: ["Prompting & AI tools", "No-code: Zapier / Make / n8n", "WhatsApp & Google Sheets automations", "Simple chatbots"],
+      sell: "Automations like lead capture → Sheet → WhatsApp reply",
+      projects: ["Auto-reply for enquiries", "Invoice generator", "FAQ chatbot for a shop"],
+      price: "₹3,000 – 20,000 / setup" }
+  ];
+
+  const STORAGE_KEY = "freelance-roadmap-v2";
+  const TOTAL = 10;
+
+  function load() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch (e) { return {}; } }
+  function save() { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {} }
+  let state = load();
+  state.steps = state.steps || {};
+
+  /* ---------- Branding & contact links ---------- */
+  const phonePretty = "+91 " + CONFIG.phone.slice(0, 5) + " " + CONFIG.phone.slice(5);
+  const fill = (sel, fn) => document.querySelectorAll(sel).forEach(fn);
+  fill(".js-brand", el => el.textContent = CONFIG.brandName);
+  fill(".js-phone", el => el.textContent = phonePretty);
+  fill(".js-tel", el => el.href = "tel:+91" + CONFIG.phone);
+  fill(".js-wa", el => el.href = "https://wa.me/91" + CONFIG.phone + "?text=" + encodeURIComponent(CONFIG.whatsappText));
+  fill(".js-ig", el => el.href = "https://instagram.com/" + CONFIG.instagram);
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* ---------- Skill tabs ---------- */
+  const tabs = document.getElementById("tabs");
+  const pathCard = document.getElementById("pathCard");
+  function li(arr) { return arr.map(x => "<li>" + x + "</li>").join(""); }
+  function showPath(id) {
+    const p = PATHS.find(x => x.id === id) || PATHS[0];
+    tabs.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.id === p.id));
+    pathCard.innerHTML =
+      '<div class="path-head"><div class="path-icon">' + p.icon + '</div><div><h3>' + p.name + '</h3><p>' + p.tagline + '</p></div></div>' +
+      '<div class="path-grid">' +
+        '<div class="path-box"><h4>📘 Learn</h4><ul>' + li(p.learn) + '</ul></div>' +
+        '<div class="path-box"><h4>🛠️ Proof projects</h4><ul>' + li(p.projects) + '</ul></div>' +
+      '</div>' +
+      '<div class="path-box" style="margin-top:12px"><h4>💡 Your first service</h4><p style="margin:0;color:var(--ink);font-weight:500">' + p.sell + '</p></div>' +
+      '<div class="path-money"><span>Beginner price</span><b>' + p.price + '</b></div>';
+    state.path = p.id; save();
+  }
+  PATHS.forEach(p => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "tab"; b.setAttribute("role", "tab"); b.dataset.id = p.id;
+    b.textContent = p.icon + " " + p.name;
+    b.addEventListener("click", () => showPath(p.id));
+    tabs.appendChild(b);
+  });
+  showPath(state.path || "web");
+
+  /* ---------- Checklist & progress ---------- */
+  const boxes = document.querySelectorAll('.task input[type="checkbox"]');
+  function doneN() { return Object.values(state.steps).filter(Boolean).length; }
+  function render() {
+    boxes.forEach(cb => {
+      const on = !!state.steps[cb.dataset.step];
+      cb.checked = on;
+      document.getElementById("step-" + cb.dataset.step).classList.toggle("done", on);
+    });
+    const n = doneN();
+    document.getElementById("doneCount").textContent = n;
+    document.getElementById("pct").textContent = Math.round(n / TOTAL * 100) + "%";
+    document.getElementById("barFill").style.width = (n / TOTAL * 100) + "%";
+    document.getElementById("doneBanner").classList.toggle("show", n === TOTAL);
+  }
+  boxes.forEach(cb => cb.addEventListener("change", () => {
+    state.steps[cb.dataset.step] = cb.checked;
+    save(); render();
+    if (cb.checked) {
+      const n = doneN();
+      const cheers = ["Nice! 💪", "Great going! 🔥", "Keep it up! 🚀", "You're on fire! ⚡"];
+      toast(n === TOTAL ? "All done! You're a freelancer 🎉" : cheers[n % cheers.length] + " " + n + "/" + TOTAL + " done");
+    }
+  }));
+
+  /* ---------- Collapsible steps ---------- */
+  const steps = [...document.querySelectorAll(".step")];
+  function setOpen(step, open) {
+    step.querySelector(".toggle").setAttribute("aria-expanded", open);
+    step.querySelector(".body").hidden = !open;
+  }
+  function openAndScroll(step) { setOpen(step, true); step.scrollIntoView({ behavior: "smooth", block: "start" }); }
+  steps.forEach((step, i) => {
+    step.querySelector(".toggle").addEventListener("click", () => setOpen(step, step.querySelector(".body").hidden));
+    if (i < steps.length - 1) {
+      const next = document.createElement("button");
+      next.type = "button"; next.className = "btn outline next";
+      next.textContent = "Next: Step " + (i + 2) + " →";
+      next.addEventListener("click", () => { setOpen(step, false); openAndScroll(steps[i + 1]); });
+      step.querySelector(".body").appendChild(next);
+    }
+  });
+
+  const startBtn = document.getElementById("startBtn");
+  function firstUndone() { return [...boxes].find(cb => !state.steps[cb.dataset.step]); }
+  startBtn.addEventListener("click", () => {
+    const cb = firstUndone();
+    openAndScroll(document.getElementById("step-" + (cb ? cb.dataset.step : 1)));
+  });
+  const n0 = doneN();
+  if (n0 > 0 && n0 < TOTAL) startBtn.textContent = "Continue: Step " + firstUndone().dataset.step + " →";
+
+  /* ---------- One-liner generator ---------- */
+  const ol = ["who", "what", "how"].map(k => document.getElementById("ol-" + k));
+  const olOut = document.getElementById("ol-out");
+  function updateOneLiner() {
+    const v = ol.map(i => i.value.trim() || i.placeholder);
+    olOut.textContent = "I help " + v[0] + " get " + v[1] + " by " + v[2] + ".";
+  }
+  ol.forEach(i => i.addEventListener("input", updateOneLiner));
+
+  /* ---------- Copy buttons ---------- */
+  async function copyText(text) {
+    try { await navigator.clipboard.writeText(text); return true; }
+    catch (e) {
+      // Fallback for in-app browsers that block the clipboard API
+      const ta = document.createElement("textarea");
+      ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.select();
+      let ok = false; try { ok = document.execCommand("copy"); } catch (e2) {}
+      ta.remove(); return ok;
+    }
+  }
+  document.querySelectorAll("[data-copy-from]").forEach(btn => btn.addEventListener("click", async () => {
+    const ok = await copyText(document.getElementById(btn.dataset.copyFrom).textContent);
+    toast(ok ? "Copied ✅" : "Long-press the text to copy");
+  }));
+
+  /* ---------- Share ---------- */
+  document.getElementById("shareBtn").addEventListener("click", async () => {
+    const url = location.href.split("#")[0].split("?")[0];
+    if (navigator.share) {
+      try { await navigator.share({ title: document.title, text: CONFIG.shareText, url }); return; }
+      catch (e) { if (e.name === "AbortError") return; }
+    }
+    if (await copyText(url)) toast("Link copied. Send it to a friend!");
+    else location.href = "https://wa.me/?text=" + encodeURIComponent(CONFIG.shareText + " " + url);
+  });
+
+  document.getElementById("resetBtn").addEventListener("click", () => {
+    if (!confirm("Clear all your ticks?")) return;
+    state.steps = {}; save(); render(); toast("Progress reset");
+    startBtn.textContent = "Start Step 1 →";
+  });
+
+  /* ---------- Toast ---------- */
+  let toastTimer;
+  function toast(msg) {
+    const t = document.getElementById("toast");
+    t.textContent = msg; t.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove("show"), 1900);
+  }
+
+  /* ---------- Reveal on scroll ---------- */
+  const revealEls = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(entries => entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+    }), { threshold: 0.1 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add("in"));
+  }
+
+  render();
+</script>
+</body>
+</html>
